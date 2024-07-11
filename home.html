@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" >
+
+  <link href="bootstrap-5.3.0-alpha3-dist/css/bootstrap.min.css" rel="stylesheet">  
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+  <title>Islamabad Marble</title>
+  <style>
+    .center {
+      margin: auto;
+      width: 50%;
+      padding: 10px;
+    }
+
+    .menu {
+      float: left;
+      padding: 15px 25px;
+      position: relative;
+      border: 2px solid green;
+    }
+
+    .menuitems {
+      float: left;
+      padding: 15px 25px;
+      border: 2px solid green;
+    }
+
+    .clear {
+      clear: both;
+    }
+
+    .submenu {
+      width: 130px;
+      position: absolute;
+      Left: 0px;
+      display: none;
+      background-color: green;
+      top: 0%;
+    }
+
+    .submenuitems {
+      padding: 10px;
+      background-color: lightblue;
+      border: 2px solid red;
+    }
+
+    .menuitems:hover {
+      background-color: green;
+    }
+
+    .menuitems:hover .submenu {
+      display: block;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .carousel-item img {
+      width: 100%;
+      height: 95vh;
+    }
+
+    .collapse {
+      margin-left: 50%;
+    }
+
+
+
+
+    .how-section1 {
+      margin-top: -15%;
+      padding: 10%;
+    }
+
+    .how-section1 h4 {
+      color: #ffa500;
+      font-weight: bold;
+      font-size: 30px;
+    }
+
+    .how-section1 .subheading {
+      color: #3931af;
+      font-size: 20px;
+    }
+
+    .how-section1 .row {
+      margin-top: 10%;
+    }
+
+    .how-img {
+      text-align: center;
+    }
+
+    .how-img img {
+      width: 40%;
+    }
+
+    #myVideo {
+
+      margin-left: 0px;
+      margin-right: 0px;
+
+    }
+
+    .centered {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    .footer-section {
+      background-size: cover ;
+      background-repeat: no-repeat;
+      background-position: center;
+      position: relative;
+      z-index: 1;
+    }
+    .container {
+      position: relative;
+      text-align: center;
+      color: white;
+    }
+
+    .third {
+
+      background: #ff0000;
+      opacity: .4;
+    }
+
+    .flex-container {
+      display: flex;
+    }
+
+    .column {
+      float: left;
+      width: 33.33%;
+      padding: 5px;
+    }
+
+    .row::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+
+    .list-style {
+      font-size: larger;
+      font-weight: 700;
+    }
+    #header {
+      position: sticky;
+    }
+  </style>
+ 
+</head>
+
+<body >
+
+  <header id="header" class="fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="home.html">
+          <img class=" rounded-circle " style="width: 40px; height: 40px;" src="IM.png" alt="logo" type="button">
+        </a>
+        <a class="navbar-brand" href="home.html">
+          <h4 style="margin-top: 10px; margin-left: -2px; font-size: x-large; ">Islamabad Marble</h4>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+
+        </button>
+
+        <div class="collapse navbar-collapse container" id="navbarSupportedContent"
+          style="margin-left: 500px; font-size: large;">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 py-2 ">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="gallery.html">Gallery</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Category
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="tiles.html">Tiles</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="marble.html">Marble</a></li>
+                
+              </ul>
+                <li class="nav-item">
+                  <a class="nav-link" href="about.html">About Us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.html">Contact Us</a>
+                </li>
+            </li>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+
+  <div id="carouselExampleDark" class="carousel carousel-dark slide">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="5000">
+        <img class="third" src="tiles1.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption ">
+          <h5 style="color: #bb2424;"><- WELCOME TO ISLAMABAD MARBLE -></h5>
+          <h1 style="margin-bottom: 180px; font-size:5.5vw; ">High Performance <br>Natural Stone Panels</h1>
+        </div>
+      </div>
+      <div class="carousel-item" data-bs-interval="2000">
+        <img class="third" src="service3.jpg" class="d-block w-100" alt="..." style="fill-opacity: var(50px);">
+        <div class="carousel-caption ">
+          <h5 style="color: #9c412b;"><- WELCOME TO ISLAMABAD MARBLE -></h5>
+          <h1 style="margin-bottom: 180px; font-size:5.5vw; ">High Performance <br>Natural Stone Panels</h1>
+        </div>
+      </div>
+      <div class="carousel-item" data-bs-interval="2000">
+        <img class="third" src="service4.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption ">
+          <h5 style="color: #9c412b;"><- WELCOME TO ISLAMABAD MARBLE -></h5>
+          <h1 style="margin-bottom: 180px; font-size:5.5vw; ">High Performance <br>Natural Stone Panels</h1>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <div class="col-lg-6 col-sm-4 col-md-6">
+    <br><br>
+  </div>
+
+  <div class="col-lg-12 col-md-12 col-sm-12">
+    <h6> <span style="font-weight: 900; font-size:x-large ;">Marbles </span> are a type of natural stone that is made
+      from limestone that has been subjected to heat and pressure. This process causes the limestone to crystallize and
+      form marble, which is a metamorphic rock. Marble is known for its beauty and its many different colors and
+      patterns. It is often used in flooring, countertops, and other decorative applications.</h6>
+    <p><br> There are many different types of tiles marbles, each with its own unique look and properties. Some of the
+      most popular types of tiles marbles include:</p>
+    <ul>
+      <li> <span class="list-style"> Carrara marble : </span>This type of marble is known for its white color and its
+        veining. It is often used in high-end applications, such as countertops and flooring.</li>
+      <li> <span class="list-style"> Calacatta marble : </span>This type of marble is also known for its white color,
+        but it has a more pronounced veining than Carrara marble.</li>
+      <li><span class="list-style"> Travertine marble : </span>This type of marble is known for its cream color and its
+        small pockmarks. It is often used in outdoor applications, such as patios and pool surrounds.</li>
+      <li> <span class="list-style"> Onyx marble : </span>This type of marble is known for its translucent quality. It
+        is often used in chandeliers and other decorative applications.</li>
+      <li> <span class="list-style"> Black marble : </span> This type of marble is known for its dark color. It is often
+        used in both residential and commercial applications.</li>
+    </ul>
+  </div>
+
+  <div style="background-image: url('granite\ 2.jpg') ;" class="col-lg-12 col-md-12 col-sm-12" id="benefits " >
+    <div class="col-lg-12 col-md-12" style="">
+      <h6 style="color: white; margin-top: 50px;"><br><br>--- CHOOSE YOUR STONE</h6>
+      <h1 style="margin: left 25px;margin-bottom: 25px;font-size: xxx-larger; font-weight: 700; color: white; ">Add
+        Luxury To Your Home</h1>
+      <div class="row" style="color: white; margin-top: 10px;">
+        <div class="col-lg-2 col-md-4 col-sm-6" style=" text-align: center; ">
+          <img style="width: 170px; height: 170px;" class="rounded-circle shadow-4-strong" src="mable3.jpg"
+            alt="Carrara marble">
+          <h5 style="margin-top: 10px;">Carrara</h5>
+        </div>
+        <div class="col-lg-2 col-md-4 col-sm-6" style=" text-align: center;">
+          <img style="width: 170px; height: 170px;" class="rounded-circle shadow-4-strong" src="marble6.jpeg"
+            alt="Calacatta marble">
+          <h5 style="margin-top: 10px;">Calacatta</h5>
+        </div>
+        <div class="col-lg-2 col-md-4 col-sm-6" style=" text-align: center;">
+          <img style="width: 170px; height: 170px;" class="rounded-circle shadow-4-strong" src="marble4.jpeg"
+            alt="Travertine marble">
+          <h5 style="margin-top: 10px;">Travertine</h5>
+        </div>
+        <div class="col-lg-2 col-md-4 col-sm-6" style=" text-align: center;">
+          <img style="width: 170px; height: 170px;" class="rounded-circle shadow-4-strong" src="marble7.jpg"
+            alt="Onyx marble">
+          <h5 style="margin-top: 10px;">Onyx</h5>
+        </div>
+        <div class="col-lg-2 col-md-4 col-sm-6" style=" text-align: center;">
+          <img style="width: 170px; height: 170px;" class="rounded-circle shadow-4-strong" src="marble8.jpeg"
+            alt="Black marble">
+          <h5 style="margin-top: 10px;">Black</h5>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <div class="col-lg-12 col-md-12 col-sm-12"><br><br>
+    <h6> <span style="font-weight: 900; font-size:x-large ;">Marbles Tiles </span> are a versatile and beautiful
+      material that can be used in a variety of applications. They are a popular choice for both residential and
+      commercial projects, and they can add a touch of luxury to any space.
+      Marble is known for its beauty and its many different colors and patterns. It is often used in flooring,
+      countertops, and other decorative applications.</h6>
+    <br>
+
+  </div>
+
+
+  <section class="my-4 container-fluid " style="background-color:rgba(17, 17, 13, 0.918)">
+    <div class="py-4 " style="background-color:rgba(77, 66, 19, 0.76)">
+      <h1 class="text-left" style="margin-left: 120px; margin-right: 0px; font-weight: bolder; font-size: xxx-large;">
+        Benefits</h1>
+    </div>
+    <div class="container-fluid " style="">
+      <div class="row">
+        <div class="card" style="width: 18rem; margin-left: 50px; margin-right: 0px;">
+          <img src="16.jpeg" class="card-img-top" alt="..." style="height: 260px;">
+          <div class="card-body "><span>
+              <h3> Durability:</h3>
+            </span>
+            <p class="card-text">Tiles marbles are a durable material that can withstand heavy use. They are a good
+              choice for areas that receive a lot of foot traffic, such as kitchens and bathrooms.
+            </p>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem; margin-left: 50px; margin-right: 0px;">
+          <img src="service3.jpg" class="card-img-top" alt="...">
+          <div class="card-body "><span>
+              <h3> Beauty:</h3>
+            </span>
+            <p class="card-text">Tiles marbles are known for their beauty and their many different colors and patterns.
+              They can add a touch of luxury to any space.
+          </div>
+        </div>
+        <div class="card" style="width: 18rem; margin-left: 50px; margin-right: 0px;">
+          <img src="2.jpg" class="card-img-top" alt="...">
+          <div class="card-body "><span>
+              <h3> Versatile:</h3>
+            </span>
+            <p class="card-text">Tiles marbles can be used in a variety of applications. They are a popular choice for
+              flooring, countertops, and other decorative applications.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section class="my-4 container-fluid" id="tiles">
+
+    <div class="py-4">
+      <h2 class="text-center" style="font-weight: bolder;">Tiles</h2>
+    </div>
+    <div class="container-fluid" type="button">
+      <a href="tiles.html">
+        <div class="row">
+          <div class="col-lg-4 col-md-4 col-sm-4 figure ">
+            <img src="t8.jpeg" alt="Ceramic tile" class="img-fluid pb-3 " style="height: 250px; width: 500px;">
+            <figcaption class="figure-caption text-center">
+              <h5>Ceramic Tile</h5>
+            </figcaption>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-4 figure ">
+            <img src="t9.jpeg" alt="Porcelain tile" class="img-fluid pb-3 " style="height: 250px; width: 500px;">
+            <figcaption class="figure-caption text-center">
+              <h5>Porcelain Tile</h5>
+            </figcaption>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-4 figure ">
+            <img src="t12.jpeg" alt="Glass tile" class="img-fluid pb-3 " style="height: 250px; width: 500px;">
+            <figcaption class="figure-caption text-center">
+              <h5>Glass Tile</h5>
+            </figcaption>
+          </div>
+        </div>
+    </div>
+    </a>
+  </section>
+
+
+  <section class="my-4 container-fluid " id="marble">
+
+    <div class="py-4">
+      <h2 class="text-center" style="font-weight: bolder;">Marbles</h2>
+    </div>
+    <div class="container-fluid" type="button">
+      <a href="marble.html">
+        <div class="row">
+          <div class="col-lg-4 col-md-4 col-sm-4 figure ">
+            <img src="marble6.jpeg" alt="Carrara Marble" class="img-fluid pb-3 " style="height: 250px; width: 500px;">
+            <figcaption class="figure-caption text-center">
+              <h5>Carrara Marble</h5>
+            </figcaption>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-4 figure ">
+            <img src="marble7.jpg" alt="Calacatta Marble" class="img-fluid pb-3 " style="height: 250px; width: 500px;">
+            <figcaption class="figure-caption text-center">
+              <h5>Calacatta Marble</h5>
+            </figcaption>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-4 figure ">
+            <img src="marble8.jpeg" alt="Black Marble" class="img-fluid pb-3 " style="height: 250px; width: 500px;">
+            <figcaption class="figure-caption text-center">
+              <h5>Black Marble</h5>
+            </figcaption>
+          </div>
+        </div>
+    </div>
+    </a>
+  </section>
+
+
+
+
+  <div class="col-lg-6 col-sm-4 col-md-6">
+    <br><br>
+  </div>
+
+
+
+
+  <!------ Include the above in your HEAD tag ---------->
+  <div class="py-4" id="warehouse">
+    <h2 class="text-center">Visit Our Marble & Granite Display Warehouse</h2>
+  </div>
+  <div class="how-section1">
+    <div class="row">
+      <div class="col-md-6 how-img">
+        <img src="3.jpg" style="height: 300px; width: 400px;" class="rounded mx-auto d-block img-fluid" alt="" />
+      </div>
+      <div class="col-md-6">
+        <h4>A Wide Variety</h4>
+        <h4 class="subheading">It is a great place to find more collections, and to make your house , offices more
+          adorable.</h4>
+        <p class="text-muted">Ceramic tile is one of the most common types of tile found in the home because it's
+          suitable for many applications. "Increased durability makes ceramic tile perfect for any room in the house,
+          such as kitchens, bathrooms, or even entryways," says Tony Castellano, senior merchant for The Home Depot.
+          "It's easy to install, clean, and comes in hundreds of styles that can fit any design. For a bonus, if you're
+          looking to renovate on a budget, ceramic offers a great price point."</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <h4>Durability</h4>
+        <h4 class="subheading">Our tiles are durable enough to withstand the wear and tear of everyday use. </h4>
+        <p class="text-muted">Durability is the ability of a material to resist wear and tear.It is a measure of how
+          long a material can last under normal use.
+          Durable material are less likely to break,chip or crack.They are also less likely to fade or discolor.
+          The manufacturing can also affect durability like tempered glass is more durable than regular glass because
+          it is heat-treated to make it stronger.
+
+        </p>
+      </div>
+      <div class="col-md-6 how-img">
+        <img src="4.jpg" style="height: 300px; width: 400px;" class=" img-fluid" alt="" />
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6 how-img">
+        <img src="5.jpg" style="height: 300px; width: 400px;" class=" img-fluid" alt="" />
+      </div>
+      <div class="col-md-6">
+        <h4>Appearance</h4>
+        <h4 class="subheading">Tiles should complement the style of your home.Consider the colors,patterns and size
+          of the tiles when making your decision. </h4>
+        <p class="text-muted">Decorative tilework or tile art should be distinguished from mosaic, where forms are made
+          of great numbers of tiny irregularly positioned tesserae, each of a single color, usually of glass or
+          sometimes ceramic or stone. There are various tile patterns, such as herringbone, staggered, offset, grid,
+          stacked, pinwheel, parquet de Versailles, basket weave, tiles Art, diagonal, chevron, and encaustic which can
+          range in size, shape, thickness, and color.</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <h4>Affordable Prices</h4>
+        <h4 class="subheading">We offer affordable prices on our tiles.It will make it possible for customers to afford
+          the tiles which they want without breaking the bank.</h4>
+        <p class="text-muted">Some stone tiles such as polished granite, marble, and travertine are very slippery when
+          wet. Stone tiles with a riven (split) surface such as slate or with a sawn and then sandblasted or honed
+          surface will be more slip-resistant. Ceramic tiles for use in wet areas can be made more slip-resistant either
+          by using very small tiles so that the grout lines acts as grooves or by imprinting a contour pattern onto the
+          face of the tile..</p>
+      </div>
+      <div class="col-md-6 how-img">
+        <img src="6.jpg" style="height: 300px; width: 400px;" class=" img-fluid" alt="" />
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+  </section>
+
+  <section class="bg-dark text-white">
+    <div class="container text-center text-md-start mt-5">
+      <!-- Grid row -->
+      <div class="row mt-3">
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          <!-- Content -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            <i class="fas fa-gem me-3 text-secondary"></i>
+          </h6>
+          <p style="font-size: x-large;">
+            Islamabad Marble
+
+          </p>
+          <img class="rounded-circle" src="IM.png" width="150" height="150" alt="logo">
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4" style="margin-top: 50px;">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            PRODUCTS
+          </h6>
+          <p>
+            <a href="#tiles" class="text-reset">Tile </a>
+          </p>
+          <p>
+            <a href="#marble" class="text-reset">Marble</a>
+          </p>
+          <hr>
+          <p>
+            <a href="#warehouse" class="text-reset">Warehouse</a>
+          </p>
+          <hr>
+          <p>
+            <a href="#benefits" class="text-reset">Benefits</a>
+          </p>
+
+        </div>
+        <!-- Grid column -->
+
+        
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4" style="margin-top: 50px;">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">Company Information</h6>
+          <p><i class="fas fa-home me-3 text-secondary"></i>Blue Area , Islamabad</p>
+          <p>
+            <i class="fas fa-envelope me-3 text-secondary"></i>
+            islamabadmarble@gmail.com
+          </p>
+          <p><i class="fas fa-phone me-3 text-secondary"></i> +92-321-5206251</p>
+          <p><i class="fas fa-print me-3 text-secondary"></i> +92-314-9500110</p>
+        </div>
+        <!-- Grid column -->
+      </div>
+      <!-- Grid row -->
+    </div>
+    <!-- Section: Links  -->
+
+    <!-- Copyright -->
+    <div class="col-md-4 center">
+      <p class="text-center">Copyright &copy; 2023 Islamabad Marble</p>
+    </div>
+    <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+  </section>
+
+
+
+  <script src="bootstrap-5.3.0-alpha3-dist/js/bootstrap.min.js"></script>
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
